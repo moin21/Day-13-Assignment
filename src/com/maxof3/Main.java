@@ -14,7 +14,7 @@ public class Main {
 		 */
 		while(true) {                                                                         // asking user to select the generic type
 			System.out.println(" \n 1. Integers\n 2. Float\n 3. String\n 4. Exit");
-			System.out.print(" Please enter your choise from above:  \n ");
+			System.out.print(" Please enter your choice from above:  \n ");
 			int opt = scan.nextInt();
 			
 			switch(opt) {                                                                     //taking input from user

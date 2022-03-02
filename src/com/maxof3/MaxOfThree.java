@@ -19,13 +19,14 @@ public class MaxOfThree<T extends Comparable<T>> {
 	}
 
 	public void MaxOfThree() {
-		MaxOfThree(this.first, this.second, this.third);
+		T printMax = MaxOfThree(this.first, this.second, this.third);
+		printMaximum(printMax);
 	}
 
 	/*
 	 * using generic type T and making the method generic.
 	 */
-	public <T extends Comparable<T>> void MaxOfThree(T first, T second, T third) {
+	public <T extends Comparable<T>> T MaxOfThree(T first, T second, T third) {
 		T max = first; // considering first is max and assigning max to first
 		String position = "first"; // for displaying the position
 		if (second.compareTo(max) > 0) {
@@ -37,6 +38,14 @@ public class MaxOfThree<T extends Comparable<T>> {
 			position = "third";
 		}
 		System.out.println("The maximum number is in " + position + " position and the number is : " + max);
+		return max;
+	}
+
+	/*
+	 * print method using generic
+	 */
+	public void printMaximum(T printmax) {
+		System.out.println(" The largest value is : " + printmax);
 	}
 
 }
