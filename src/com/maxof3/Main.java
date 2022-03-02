@@ -8,7 +8,7 @@ public class Main {
 		/*
 		 * creating object
 		 */
-		MaxOfThree max = new MaxOfThree();
+		MaxOfThree max;
 		/*
 		 * taking input from user
 		 */
@@ -28,7 +28,8 @@ public class Main {
 				
 				System.out.print(" Please enter the third Integer value: ");
 				Integer third = scan.nextInt();
-				max.findingMax(first, second, third);
+				max = new MaxOfThree<Integer>(first, second, third);                             //creating object 
+				max.MaxOfThree();
 				break;
 			}				
 			case 2:
@@ -41,7 +42,8 @@ public class Main {
 				
 				System.out.print(" Please enter the third float value: ");
 				Float third = scan.nextFloat();
-				max.findingMax(first, second, third);
+				max = new MaxOfThree<Float>(first, second, third);                             //creating object 
+				max.MaxOfThree();
 				break;
 			}
 			case 3:
@@ -54,7 +56,8 @@ public class Main {
 				
 				System.out.print(" Please enter the third string: ");
 				String third = scan.next();
-				max.findingMax(first, second, third);
+				max = new MaxOfThree<String>(first, second, third);                             //creating object 
+				max.MaxOfThree();
 				break;
 			}
 			case 4:
