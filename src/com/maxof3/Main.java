@@ -13,11 +13,11 @@ public class Main {
 		 * taking input from user
 		 */
 		System.out.println("Please enter the first number: ");
-		Integer first = sc.nextInt();
+		Float first = sc.nextFloat();
 		System.out.println("Please enter the second number: ");
-		Integer second = sc.nextInt();
+		Float second = sc.nextFloat();
 		System.out.println("Please enter the third number: ");
-		Integer third = sc.nextInt();
+		Float third = sc.nextFloat();
 		/*
 		 * Using findingMethod with user inputs
 		 */

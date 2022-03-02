@@ -1,11 +1,11 @@
 package com.maxof3;
 
 public class MaxOfThree {
-	public void findingMax(Integer first, Integer second, Integer third) {
+	public void findingMax(Float first, Float second, Float third) {
 		/*
 		 * considering first is max and assigning max to first
 		 */
-		int max = first;
+		float max = first;
 		String position = "first";
 		if (second.compareTo(max) > 0) {
 			/*
@@ -15,7 +15,7 @@ public class MaxOfThree {
 			position = "second";
 		}
 		/*
-		 * comparing with max Integer and if greater than 0 assigning to max
+		 * comparing with max Float and if greater than 0 assigning to max
 		 */
 		if (third.compareTo(max) > 0) {
 			max = third;
